@@ -2,6 +2,8 @@
 
 Aplicação cliente da API Hacker News Laravel 5 (<a href="https://github.com/saulobr88/hnl5">HNL5</a>). Consome os recursos News, Top, Best e Users da API.
 
+Pode ser acessado aqui: <a href="https://hnvue.netlify.com/" target="_blank">https://hnvue.netlify.com/</a>
+
 ## Build Setup
 
 ``` bash

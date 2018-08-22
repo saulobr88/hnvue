@@ -24,10 +24,41 @@ npm run unit
 npm test
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
-
 ### Recursos usados
 - vue-cli
 - vue 2.5
 - vue-router
 - vue-resource
+
+<hr>
+
+## Usando com o Docker
+Existe uma <a href="https://hub.docker.com/r/saulobr88/hnvue/" taget="_blank">imagem</a> desta aplicação no DockerHub, a mesma pode ser usada com o seguinte comando:
+
+1 - O docker irá baixar a imagem caso ela não exista no Docker Host:
+
+\# docker run -d --rm -p 8081:8080 saulobr88/hnvue:latest
+
+## Usando com o Docker Compose
+Para usar com o Docker Compose, basta subir a aplicação usando o arquivo 'docker-compose.yml' do repositório, ele sobe a API e a aplicação cliente:
+
+1 - Iniciar o Swarm caso não já esteja ativado:
+
+\# docker swarm init
+
+2 - Executar o Deploy com o docker-compose, no exemplo usei o nome 'hnlab':
+
+\# docker stack deploy -c docker-compose.yml hnlab
+
+3 - O mapeamento das portas no Docker Host está da seguinte forma:
+
+- Porta 8080 serve a Aplicação Laravel (Backend)
+- Porta 8081 serve a aplicação VueJs (Frontend)
+
+<hr>
+
+## About VueJs
+
+For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+

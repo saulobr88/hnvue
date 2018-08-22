@@ -1,7 +1,8 @@
 // Este arquivo apenas contem os endereços dos endpoints
 
 // Base da API
-const base = 'http://hnl5.dev.br/api'
+// const base = 'http://hnl5.dev.br/api'
+const base = 'https://hnl5.herokuapp.com/'
 
 const news = `${base}/news`
 const tops = `${base}/tops`
